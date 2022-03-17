@@ -1,0 +1,56 @@
+.Page {
+  width: 100vw;
+  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TitleImg {
+  height: 67px;
+  margin: 18px 0px;
+}
+
+.CardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card {
+  width: 287px;
+  padding: 10px;
+  position: relative;
+}
+
+.CardImg {
+  width: 100%;
+}
+
+.CardCoverImg {
+  position: absolute;
+  width: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+  mix-blend-mode: overlay;
+  filter: brightness(70%);
+}
+
+.TextContainer {
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: start;
+  position: absolute;
+  top: 256px;
+  left: 36px;
+  right: 36px;
+  bottom: 48px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .CardsContainer {
+    flex-direction: column;
+  }
+}

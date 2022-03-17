@@ -1,0 +1,77 @@
+.Page {
+  width: 100vw;
+  padding: 64px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.Background {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid gray;
+  border-width: 0.5px 0px 0.5px 0px;
+  width: 100vw;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: start;
+}
+
+.TextContainer {
+  width: 420px;
+}
+
+.TitleImg {
+  height: 67px;
+}
+
+.Texts {
+  position: relative;
+  left: 12px;
+  top: -30px;
+  width: calc(100% + 30px);
+
+  p {
+    padding: 5px 0px;
+  }
+}
+
+.Avatar {
+  height: 420px;
+  z-index: 3;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 720px) {
+  .Background {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .Avatar {
+    width: 400px;
+    height: 340px;
+    object-fit: cover;
+  }
+
+  .TextContainer {
+    width: 100%;
+    margin-top: -24px;
+  }
+
+  .TitleImg {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .Texts {
+    position: relative;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+}

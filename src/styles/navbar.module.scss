@@ -1,0 +1,118 @@
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 160px;
+  z-index: 99;
+}
+
+.BackgroundImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 100%;
+  object-fit: contain;
+}
+
+.Container {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LogoImg {
+  padding-left: 48px;
+  height: 56px;
+}
+
+.ButtonContainer {
+  padding: 0px 48px;
+}
+
+.Button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 0px 10px;
+  font-family: "Roboto-Thin";
+  font-size: 16px;
+}
+
+.LanguageButton {
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+  border-color: white;
+  border: 0.5px solid;
+  background: transparent;
+  color: white;
+  margin-left: 10px;
+  font-family: "Roboto-Thin";
+  font-size: 16px;
+}
+
+.MenuButton {
+  height: 45px;
+  padding-right: 24px;
+  display: none;
+}
+
+.Menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.MenuButtonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 950px) {
+  .NavBar {
+    height: 110px;
+  }
+
+  .Container {
+    height: 64px;
+  }
+
+  .ButtonContainer {
+    display: none;
+  }
+
+  .LogoImg {
+    padding-left: 24px;
+    height: 45px;
+  }
+
+  .Menu {
+    display: flex;
+  }
+
+  .MenuButton {
+    display: block;
+  }
+
+  .Button {
+    padding: 10px 0px 10px 0px;
+  }
+
+  .LanguageButton {
+    margin: auto;
+    margin-top: 10px;
+  }
+}

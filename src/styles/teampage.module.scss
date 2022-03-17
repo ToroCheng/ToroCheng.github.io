@@ -1,0 +1,48 @@
+.Title {
+  height: 67px;
+  margin: 18px 0px;
+}
+
+.Background {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid gray;
+  border-width: 0.5px 0px 0.5px 0px;
+  width: 100vw;
+  padding: 24px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.TeammatesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+  justify-content: center;
+}
+
+.TeammateContainer {
+  padding: 10px 5px;
+}
+
+.TeammateImg {
+  width: 168px;
+}
+
+.NameText {
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  font-size: 18px;
+  margin: -3px;
+}
+
+.TitleText {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  transform: scale(0.9);
+}

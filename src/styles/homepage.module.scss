@@ -1,0 +1,48 @@
+.Page {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 240px 0px 180px 0px;
+  box-sizing: border-box;
+}
+
+.PageLogoImg {
+  width: 520px;
+}
+
+.ContentContainer {
+  color: white;
+  font-family: "Roboto-Thin";
+  font-style: italic;
+  font-size: 14px;
+}
+
+.ConnectButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+.ConnectButtonImg {
+  width: 240px;
+}
+
+@media screen and (max-width: 720px) {
+  .Page {
+    padding: 240px 0px 240px 0px;
+  }
+
+  .PageLogoImg {
+    width: 240px;
+  }
+
+  .ContentContainer {
+    font-size: 10px;
+  }
+
+  .ConnectButtonImg {
+    width: 180px;
+  }
+}
